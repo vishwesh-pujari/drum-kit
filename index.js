@@ -51,7 +51,7 @@ function playAudio(character) {
 function addAnimation(key) {
     var button = document.querySelector("." + key); // eg ".w" or ".a"
     
-    if (button == null) // if any key other than w, s, d etc was pressed
+    if (button === null) // if any key other than w, s, d etc was pressed
         return;
     
     button.classList.add("pressed"); // add the button to the pressed class so that it gets its applied css
